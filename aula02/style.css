@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin: 3px;
+    border-collapse: collapse;
+}
+
+table th, td {
+    padding: 0.6em;
+    text-align: center;
+    border: 1px solid #c3c3c3;
+}
+
+td strong {
+    font-size: 2rem;
+    color: white;
+}
+
+tfoot td p{
+    margin: auto;
+    padding: 1em;
+    width: fit-content;
+    font-family: 'Roboto', serif;
+    font-size: 0.8rem;
+}
+
+.empty-cell {
+    border: none;
+}
+
+.first-column {
+    text-align: start;
+}
+
+.color1-cell {
+    color: white;
+    background-color: #7ebff2;
+}
+
+.color2-cell {
+    color: white;
+    background-color: #4a87ec;
+}
+
+.color3-cell {
+    color: white;
+    background-color: #7073ec;
+}
