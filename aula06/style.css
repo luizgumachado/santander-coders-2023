@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    height: 100vh;
+    width: auto;
+}
+
+h1 {
+    padding-left: 15px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #5296d5;
+}
+
+nav p{
+    height: fit-content;
+    padding: 10px 15px;
+    background-color: #65c97a;
+}
+
+main {
+    width: auto;
+    margin: 10px;
+    display: grid;
+    grid-template: 
+        "div1 div2" 100%;
+    gap: 20px;
+}
+
+main div {
+    width: 100%;
+    height: 740px;
+    padding: 5px;
+    background-color: #e7a03c;
+}
+
+footer {
+    padding: 10px 15px;
+    background-color: #37465a;
+}
