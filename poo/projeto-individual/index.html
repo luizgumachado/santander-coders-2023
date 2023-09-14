@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CRUD</h1>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="content-head">
+            <h2>Lista de Produtos</h2>
+            <button id="adicionar">
+                adicionar produto
+            </button>
+            <button id="editar">
+                editar produto
+            </button>
+        </div>
+
+        <form style="display: none">
+            <input class="common-input" type="text" name="Produto" id="nome" placeholder="Nome">
+            <input class="common-input" type="number" name="Quantidade" id="quantidade" placeholder="Quantidade">
+            <div class="price-wrapper">
+                <span>R$</span>
+                <input type="number" min="0" placeholder="0,00" step=".10" name="Preço" id="preço" placeholder="Preço">
+            </div>
+            <select class="common-input" name="tipo-produto" id="select" title="select">
+                <option value="" selected>Selecione o Tipo</option>
+                <option value="livro">Livro</option>
+                <option value="fogão">Fogão</option>
+                <option value="geladeira">Geladeira</option>
+                <option value="microondas">Microondas</option>
+                <option value="jogo">Jogo de Videogame</option>
+            </select>
+            
+            <div id="input-wrapper">
+                <div class="inner-input" id="input-livro">
+                    <input type="text" name="Gênero" id="livro-genero" placeholder="Gênero">
+                    <input type="text" name="Autor" id="autor" placeholder="Autor">
+                    <input type="number" name="Ano" id="ano" placeholder="Ano de Publicação" min="0">
+                    <input type="number" name="Faixa Etária" id="livro-faixa-etaria" placeholder="Faixa etária">
+                    <input type="button" value="adicionar" id="enviar-livro" onclick="Interface.adicionarLivro()">
+                </div>
+
+                <div class="inner-input" id="input-geladeira">
+                    <input type="number" name="Capacidade Geladeira" id="capacidade-geladeira" placeholder="Informe o volume (L)" min="117">
+                    <select name="voltagem" id="voltagem-geladeira">
+                        <option value="" disabled selected>Voltagem</option>
+                        <option value="110">110 V</option>
+                        <option value="220">220 V</option>
+                    </select>
+                    <select name="FrostFree" id="frostFree">
+                        <option value="" disabled selected>É FrostFree?</option>
+                        <option value="true">Sim</option>
+                        <option value="false">Não</option>
+                    </select>
+                    <input type="button" value="adicionar" id="enviar-geladeira" onclick="Interface.adicionarGeladeira()">
+                </div>
+
+                <div class="inner-input" id="input-fogão">
+                    <input type="number" name="Capacidade Fogão" id="capacidade-fogão" placeholder="Informe o volume (L)" min="100">
+                    <select name="Voltagem Fogão" id="voltagem-fogão">
+                        <option value="" disabled selected>Voltagem</option>
+                        <option value="110">110 V</option>
+                        <option value="220">220 V</option>
+                    </select>
+                    <select name="Número de Bocas" id="num-bocas">
+                        <option value="" disabled selected>Número de bocas</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <input type="button" value="adicionar" id="enviar-fogão" onclick="Interface.adicionarFogão()">
+                </div>
+
+                <div class="inner-input" id="input-microondas">
+                    <input type="number" name="Capacidade Microondas" id="capacidade-microondas" placeholder="Informe o volume (L)" min="18">
+                    <input type="number" name="Potência Microondas" id="potência-microondas" placeholder="Informe a potência (W)" min="600">
+                    <select name="Voltagem microondas" id="voltagem-microondas">
+                        <option value="" disabled selected>Voltagem</option>
+                        <option value="110">110 V</option>
+                        <option value="220">220 V</option>
+                    </select>
+                    <input type="button" value="adicionar" id="enviar-microondas" onclick="Interface.adicionarMicroondas()">
+                </div>
+
+                <div class="inner-input" id="input-jogo">
+                    <input type="number" name="Faixa Etária" id="jogo-faixa-etaria" placeholder="Faixa etária">
+                    <input type="text" name="Gênero" id="jogo-genero" placeholder="Gênero">
+                    <input type="button" value="adicionar" id="enviar-jogo" onclick="Interface.adicionarJogo()">
+                </div>
+            </div>
+        </form>
+
+        <section>
+            <div id="catalogo">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>2023 - Luiz Gustavo Souza</span>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
