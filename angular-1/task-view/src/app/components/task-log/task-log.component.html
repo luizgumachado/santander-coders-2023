@@ -1,0 +1,10 @@
+<div *ngIf="clickedTasks">
+    <h2>Task Log</h2>
+        <div *ngFor="let task of clickedTasks">
+            <p>Título: {{ task.title }}</p>
+            <p>Descrição: {{ task.description }}</p>
+            <p>Data de vencimento: {{ task.date }}</p>
+            <p>Status: {{ task.status }}</p>
+            <hr>
+    </div>
+</div>

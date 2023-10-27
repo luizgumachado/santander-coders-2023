@@ -1,0 +1,17 @@
+<header>
+  <h1>Task<span>View</span></h1>
+</header>
+
+<main>
+  <app-task-form (addTask)="onAddTask($event)"></app-task-form>
+
+  <app-task-list [tasks]="taskList" (handleTask)="handleTask($event)" (clickedTask)="onClickTask($event)"></app-task-list>
+
+  <div #myDiv>
+    <div *ngIf="selectedTask">
+      <app-task-details [task]="selectedTask" (closeDetails)="closeDetails()"></app-task-details>
+    </div>
+  </div>
+
+  <app-task-log [clickedTasks]="clickedTasks"></app-task-log>
+</main>

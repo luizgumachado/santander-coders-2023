@@ -1,0 +1,12 @@
+header {
+    padding: 1.5em 3em;
+}
+
+header span {
+    color: rgb(255, 20, 157);
+}
+
+main {
+    max-width: 1600px;
+    margin: 0 auto
+}

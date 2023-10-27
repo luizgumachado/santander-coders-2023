@@ -1,0 +1,9 @@
+<div class="details-task">
+    <h3>Detalhes da Tarefa</h3>
+    <p>Título: {{ task.title }}</p>
+    <p>Descrição: {{ task.description }}</p>
+    <p>Data de vencimento: {{ task.date }}</p>
+    <p>Status: {{ task.status }}</p>
+
+    <button (click)="close()">Fechar</button>
+</div>

@@ -1,0 +1,61 @@
+.task-form {
+    padding-left: 2em;
+}
+
+span {
+    color: rgb(255, 20, 157);
+}
+
+form {
+    width: 25%;
+    padding: 2em;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+input, select {
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    font: inherit;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    background: transparent
+}
+
+option {
+    color: rgb(255, 20, 157);
+}
+
+button {
+    width: 30%;
+    padding: 0.5em;
+    font: inherit;
+    font-weight: bold;
+    background-color: rgb(255, 20, 157);
+    color: white;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(255, 20, 157);
+}
+
+
+button:active {
+    background: white;
+}
+
+.text-danger {
+    margin-top: 0.8em;
+    color: rgb(255, 20, 157);
+}
